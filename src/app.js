@@ -22,7 +22,7 @@ function excuseGenerator(quien, que, cuando) {
   );
 }
 function onLoad() {
-  var excusa = document.getElementById("excuse");
+  var excusa = document.getElementById("excusa");
   excusa.innerHTML = excuseGenerator(who, what, when);
 }
 window.onload = onLoad;
