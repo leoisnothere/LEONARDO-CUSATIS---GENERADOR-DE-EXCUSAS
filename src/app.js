@@ -11,15 +11,8 @@ function excuseGenerator(quien, que, cuando) {
   let numQuien = Math.floor(Math.random() * quien.length);
   let numQue = Math.floor(Math.random() * que.length);
   let numCuando = Math.floor(Math.random() * cuando.length);
-  return (
-    quien[numQuien] +
-    " " +
-    que[numQue] +
-    " " +
-    "mi tarea" +
-    " " +
-    cuando[numCuando]
-  );
+
+  return `${quien[numQuien]} ${que[numQue]} mi tarea ${cuando[numCuando]}`;
 }
 function onLoad() {
   var excusa = document.getElementById("excusa");
